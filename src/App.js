@@ -3,7 +3,9 @@ import './App.css';
 
 function App() {
   return (
-    <div />
+    <div>
+      <h1>Welcome to the Calculator!</h1>
+    </div>
   );
 }
 
