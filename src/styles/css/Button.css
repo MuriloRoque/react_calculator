@@ -7,14 +7,17 @@ button {
   outline: none;
   position: relative;
   -webkit-transition-duration: 0.4s;
+
   /* Safari */
   transition-duration: 0.4s;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 button:hover {
-  background-color: #bebbbb; }
+  background-color: #bebbbb;
+}
 
-button:after {
+button::after {
   content: "";
   background: #e0e0e0;
   display: block;
@@ -24,22 +27,28 @@ button:after {
   margin-left: -20px !important;
   margin-top: -120%;
   opacity: 0;
-  transition: all 0.8s; }
+  transition: all 0.8s;
+}
 
-button:active:after {
+button:active::after {
   padding: 0;
   margin: 0;
   opacity: 1;
-  transition: 0s; }
+  transition: 0s;
+}
 
 .orange {
-  background-color: #f3903e; }
+  background-color: #f3903e;
+}
 
 .orange:hover {
-  background-color: #ce7934; }
+  background-color: #ce7934;
+}
 
-.orange:after {
-  background: #f3903e; }
+.orange::after {
+  background: #f3903e;
+}
 
 .wide {
-  width: 50%; }
+  width: 50%;
+}

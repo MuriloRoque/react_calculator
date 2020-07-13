@@ -5,9 +5,9 @@ import PropTypes from 'prop-types';
 const Button = ({ name, color, wide }) => {
   const colorClass = color ? 'orange' : '';
   const wideClass = wide ? `${colorClass} wide` : `${colorClass}`;
-  return(
+  return (
     <button type="button" className={wideClass}>{name}</button>
-  )
+  );
 };
 
 Button.propTypes = {

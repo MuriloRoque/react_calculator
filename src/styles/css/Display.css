@@ -4,10 +4,13 @@
   justify-content: flex-end;
   background-color: #848593;
   height: 100px;
-  align-items: center; }
-  #display p {
-    font-size: 47px;
-    margin: 0;
-    color: #fff;
-    font-weight: bold;
-    padding-right: 5px; }
+  align-items: center;
+}
+
+#display p {
+  font-size: 47px;
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+  padding-right: 5px;
+}

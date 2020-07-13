@@ -5,5 +5,5 @@
 		"../scss/ButtonPanel.scss"
 	],
 	"names": [],
-	"mappings": "AAAA,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM,GACxB"
+	"mappings": "AAAA,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK,GACd"
 }
