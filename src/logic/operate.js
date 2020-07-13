@@ -1,22 +1,21 @@
-import Big from './big.mjs';
+import Big from 'big.js';
 
 const operations = (() => {
   const operate = (numberOne, numberTwo, operation) => {
-    if(operation === '+'){
-      return Big(numberOne) + Big(numberTwo);
+    if (operation === '+') {
+      return Big(numberOne).plus(Big(numberTwo));
     }
-    else if(operation === '-'){
-      return Big(numberOne) - Big(numberTwo);
+    if (operation === '-') {
+      return Big(numberOne).minus(Big(numberTwo));
     }
-    else if(operation === '÷'){
-      return Big(numberOne) / Big(numberTwo);
+    if (operation === '÷') {
+      return Big(numberOne).div(Big(numberTwo));
     }
-    else if(operation === 'x'){
-      return Big(numberOne) * Big(numberTwo);
+    if (operation === 'x') {
+      return Big(numberOne).times(Big(numberTwo));
     }
-    else{
-      return Big(numberOne)/100 * Big(numberTwo);
-    }
+
+    return Big(numberOne).times(Big(numberTwo).times(0.01));
   };
 
   return { operate };

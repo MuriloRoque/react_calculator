@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "@types/big.js": "^4.0.5",
     "@typescript-eslint/parser": "^3.6.0",
     "airbnb": "0.0.2",
     "chai": "^4.2.0",
