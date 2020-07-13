@@ -5,10 +5,13 @@
   background-color: #848593;
   height: 100px;
   align-items: center;
-  overflow: hidden; }
-  #display p {
-    font-size: 47px;
-    margin: 0;
-    color: #fff;
-    font-weight: bold;
-    padding-right: 5px; }
+  overflow: hidden;
+}
+
+#display p {
+  font-size: 47px;
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+  padding-right: 5px;
+}
