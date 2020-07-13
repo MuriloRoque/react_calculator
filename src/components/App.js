@@ -4,17 +4,18 @@ import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 
 class App extends React.Component {
-  constructor(){
-    super()
+  constructor() {
+    super();
   }
 
   render() {
-    return(
-      <div id='parent-div'>
-        <Display result='0' />
+    return (
+      <div id="parent-div">
+        <Display result="0" />
         <ButtonPanel />
       </div>
-    )};
+    );
+  }
 }
 
 export default App;
