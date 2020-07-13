@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/css/ButtonPanel.css';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
 const ButtonPanel = ({ handleClick }) => {
@@ -15,7 +16,7 @@ const ButtonPanel = ({ handleClick }) => {
         <div className="row" key={row}>
           {row.map(char => (
             <Button
-              handleClick={props.handleClick}
+              handleClick={handleClick}
               key={char}
               name={`${char}`}
               color={['+', '-', 'x', '÷', '='].includes(char) ? 'orange' : ''}
