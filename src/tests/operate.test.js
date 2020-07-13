@@ -22,5 +22,5 @@ test('the multiplication of two numbers', () => {
 })
 
 test('the percentage of two numbers', () => {
-  expect(operations.operate(numberOne, numberTwo, '%')).to.be.eql(Big(2))
+  expect(operations.operate(numberOne, numberTwo, '%')).to.be.eql(Big(0.2))
 })
