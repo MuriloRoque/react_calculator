@@ -2,14 +2,14 @@ import React from 'react';
 import '../styles/Display.css';
 
 class Display extends React.Component {
-  constructor(){
-    super()
+  constructor(props){
+    super(props)
   }
 
   render() {
     return(
       <div id='display'>
-        <h1>This is the DIsplay</h1>
+        <h1>{this.props.result}</h1>
       </div>
     )};
 }
