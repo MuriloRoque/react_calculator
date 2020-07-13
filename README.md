@@ -17,6 +17,8 @@ In this project I:
 - React
 - HTML
 - CSS
+- Jest
+- Enzyme
 
 ## Live Demo
 
@@ -28,6 +30,7 @@ In this project I:
 - `cd` into the project directory;
 - Run `npm install` to install the necessary modules;
 - Run `npm start`, the page will automatically load on [localhost:3000](localhost:3000).
+- To run tests, type `npm run test`.
 
 ## Author
 

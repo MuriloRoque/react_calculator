@@ -1,0 +1,8 @@
+button {
+  width: 100px;
+  height: 100px;
+}
+
+.row:last-child button:last-child {
+  width: 200px;
+}
