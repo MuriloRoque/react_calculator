@@ -1,5 +1,4 @@
 .row {
   display: flex;
-  justify-content: center; }
-
-/*# sourceMappingURL=ButtonPanel.css.map */
+  justify-content: center;
+  width: 100%; }

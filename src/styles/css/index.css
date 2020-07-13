@@ -1,5 +1,5 @@
-body {
-  background-color: #ebd6d6;
-  text-align: center; }
+html {
+  box-sizing: border-box; }
 
-/*# sourceMappingURL=index.css.map */
+body {
+  background-color: #ebd6d6; }

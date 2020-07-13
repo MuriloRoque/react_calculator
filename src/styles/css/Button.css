@@ -1,8 +1,6 @@
 button {
-  width: 100px;
+  width: 175px;
   height: 100px; }
 
 .row:last-child button:last-child {
-  width: 200px; }
-
-/*# sourceMappingURL=Button.css.map */
+  width: 350px; }
