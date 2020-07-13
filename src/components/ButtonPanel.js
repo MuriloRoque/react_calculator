@@ -2,38 +2,27 @@ import React from 'react';
 import '../styles/ButtonPanel.css';
 import Button from './Button';
 
-const ButtonPanel = () => (
-  <div id="button-panel">
-    <div className="row">
-      <Button name="AC" />
-      <Button name="+/-" />
-      <Button name="%" />
-      <Button name="÷" />
+const ButtonPanel = () => {
+  const firstRow = ['AC', '+/-', '%', '÷'];
+  const secondRow = ['7', '8', '9', 'x'];
+  const thirdRow = ['4', '5', '6', '-'];
+  const fourthRow = ['1', '2', '3', '+'];
+  const fifthRow = ['0', '.', '='];
+  const rows = [firstRow, secondRow, thirdRow, fourthRow, fifthRow];
+  return (
+    <div id="button-panel">
+      {rows.map(row => (
+        <div className="row" key={row}>
+          {row.map(char => (
+            <Button
+              key={char}
+              name={`${char}`}
+            />
+          ))}
+        </div>
+      ))}
     </div>
-    <div className="row">
-      <Button name="7" />
-      <Button name="8" />
-      <Button name="9" />
-      <Button name="x" />
-    </div>
-    <div className="row">
-      <Button name="4" />
-      <Button name="5" />
-      <Button name="6" />
-      <Button name="-" />
-    </div>
-    <div className="row">
-      <Button name="1" />
-      <Button name="2" />
-      <Button name="3" />
-      <Button name="+" />
-    </div>
-    <div className="row">
-      <Button name="0" />
-      <Button name="." />
-      <Button className="equal" name="=" />
-    </div>
-  </div>
-);
+  );
+};
 
 export default ButtonPanel;
