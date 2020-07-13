@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/ButtonPanel.css';
+import '../styles/css/ButtonPanel.css';
 import Button from './Button';
 
 const ButtonPanel = () => {
@@ -17,6 +17,8 @@ const ButtonPanel = () => {
             <Button
               key={char}
               name={`${char}`}
+              color={['+', '-', 'x', '÷', '='].includes(char) ? 'orange' : ''}
+              wide={char === '0'}
             />
           ))}
         </div>
