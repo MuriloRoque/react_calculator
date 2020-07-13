@@ -37,7 +37,7 @@ class ButtonPanel extends React.Component {
         <div className='row'>
           <Button name='0' />
           <Button name='.' />
-          <Button name='=' />
+          <Button className='equal' name='=' />
         </div>
       </div>
     )};
