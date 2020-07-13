@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/css/ButtonPanel.css';
 import Button from './Button';
 
-const ButtonPanel = () => {
+const ButtonPanel = ({ handleClick }) => {
   const firstRow = ['AC', '+/-', '%', '÷'];
   const secondRow = ['7', '8', '9', 'x'];
   const thirdRow = ['4', '5', '6', '-'];
@@ -15,6 +15,7 @@ const ButtonPanel = () => {
         <div className="row" key={row}>
           {row.map(char => (
             <Button
+              handleClick={props.handleClick}
               key={char}
               name={`${char}`}
               color={['+', '-', 'x', '÷', '='].includes(char) ? 'orange' : ''}
@@ -25,6 +26,10 @@ const ButtonPanel = () => {
       ))}
     </div>
   );
+};
+
+ButtonPanel.propTypes = {
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default ButtonPanel;
