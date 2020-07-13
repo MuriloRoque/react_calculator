@@ -1,8 +1,8 @@
 import React from 'react';
-import ButtonPanel from '../components/ButtonPanel';
-import Button from '../components/Button';
 import { shallow } from 'enzyme';
 import { expect } from 'chai';
+import ButtonPanel from '../components/ButtonPanel';
+import Button from '../components/Button';
 
 test('renders 15 buttons', () => {
   const panel = shallow(<ButtonPanel />);

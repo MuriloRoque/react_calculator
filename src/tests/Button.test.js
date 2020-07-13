@@ -3,13 +3,13 @@ import { render } from '@testing-library/react';
 import Button from '../components/Button';
 
 test('renders the button texts correctly', () => {
-  const { getByText } = render(<Button name='=' />);
+  const { getByText } = render(<Button name="=" />);
   const equalButton = getByText(/=/i);
   expect(equalButton).toBeInTheDocument();
 });
 
 test('the button roles are button', () => {
-  const { getByRole } = render(<Button name='=' />);
+  const { getByRole } = render(<Button name="=" />);
   const equalButton = getByRole('button');
   expect(equalButton).toBeInTheDocument();
 });
