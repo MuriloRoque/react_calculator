@@ -9,7 +9,12 @@ const operations = (() => {
       return Big(numberOne).minus(Big(numberTwo));
     }
     if (operation === '÷') {
-      return Big(numberOne).div(Big(numberTwo));
+      if(numberTwo === '0'){
+        alert('Division by zero is invalid')
+      }
+      else{
+        return Big(numberOne).div(Big(numberTwo));
+      }
     }
     if (operation === 'x') {
       return Big(numberOne).times(Big(numberTwo));
