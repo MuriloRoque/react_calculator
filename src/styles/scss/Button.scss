@@ -1,8 +1,10 @@
 button {
-  width: 175px;
-  height: 100px;
+  width: 25%;
+  font-size: 22px;
+  border: 0.5px solid #c9c9c9;
+  background-color: #e0e0e0;
 }
 
-.row:last-child button:last-child {
-  width: 350px;
+.row:last-child button:first-child {
+  width: 50%;
 }
