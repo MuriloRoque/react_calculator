@@ -13,18 +13,24 @@ class App extends Component {
       operation: null,
     };
     this.handleClick = this.handleClick.bind(this);
+    this.strResult = this.strResult.bind(this);
   }
 
   handleClick(buttonName) {
-    const { total, next, operation } = this.state;
-    const calculator = calculations.calculate({ total, next, operation }, buttonName);
+    const calculator = calculations.calculate(this.state, buttonName);
     this.setState(calculator);
+  }
+
+  strResult() {
+    const { total, next, operation } = this.state;
+    const result = `${total}${operation}${next}`.replace(/null/g, '');
+    return result === '' ? undefined : result;
   }
 
   render() {
     return (
       <div id="parent-div">
-        <Display result={this.result} />
+        <Display result={this.strResult()} />
         <ButtonPanel handleClick={this.handleClick} />
       </div>
     );
