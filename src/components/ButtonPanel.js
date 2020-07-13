@@ -17,7 +17,7 @@ const ButtonPanel = () => {
             <Button
               key={char}
               name={`${char}`}
-              color={['+', '-', 'x', '÷', '='].includes(char)}
+              color={['+', '-', 'x', '÷', '='].includes(char) ? 'orange' : ''}
               wide={char === '0'}
             />
           ))}
