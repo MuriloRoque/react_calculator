@@ -1,12 +1,17 @@
 import React from 'react';
 import '../styles/App.css';
 
-function App() {
-  return (
-    <div>
-      <h1 className='title'>Welcome to the Calculator!</h1>
+class App extends React.Component {
+  constructor(){
+    super()
+  }
+
+  render() {
+    <div id='parent-div'>
+      <Display />
+      <ButtonPanel />
     </div>
-  );
+  };
 }
 
 export default App;
