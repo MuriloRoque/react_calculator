@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "Display.css",
+	"sources": [
+		"../scss/Display.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,QAAQ,CAAC;EACP,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,MAAM;EACd,UAAU,EAAE,KAAK,GAClB;;AAED,AAAA,QAAQ,CAAC,CAAC,CAAC;EACT,SAAS,EAAE,IAAI,GAChB"
+}

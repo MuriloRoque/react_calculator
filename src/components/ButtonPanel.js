@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/ButtonPanel.css';
+import '../styles/css/ButtonPanel.css';
 import Button from './Button';
 
 const ButtonPanel = () => {
