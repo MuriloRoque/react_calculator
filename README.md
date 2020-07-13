@@ -16,7 +16,7 @@ In this project I:
 
 - React
 - HTML
-- CSS
+- SCSS
 - Jest
 - Enzyme
 
