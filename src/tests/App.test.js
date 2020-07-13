@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from './App';
+import App from '../components/App';
 
 test('renders welcome to calculator', () => {
   const { getByText } = render(<App />);
