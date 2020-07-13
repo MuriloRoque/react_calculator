@@ -1,18 +1,18 @@
 import React from 'react';
 import '../styles/Display.css';
+import PropTypes from 'prop-types';
 
-class Display extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const Display = props => {
+  const { result } = props;
+  return (
+    <div id="display">
+      <p>{result}</p>
+    </div>
+  );
+};
 
-  render() {
-    return (
-      <div id="display">
-        <p>{this.props.result}</p>
-      </div>
-    );
-  }
-}
+Display.propTypes = {
+  result: PropTypes.string.isRequired,
+};
 
 export default Display;
