@@ -2,17 +2,18 @@ import React from 'react';
 import '../styles/css/Button.css';
 import PropTypes from 'prop-types';
 
-const Button = ({ className, name }) => (
-  <button type="button" className={className}>{name}</button>
-);
-
-Button.propTypes = {
-  className: PropTypes.string,
-  name: PropTypes.string.isRequired,
+const Button = ({ name, color, wide }) => {
+  const colorClass = color ? 'orange' : '';
+  const wideClass = wide ? `${colorClass} wide` : `${colorClass}`;
+  return(
+    <button type="button" className={wideClass}>{name}</button>
+  )
 };
 
-Button.defaultProps = {
-  className: '',
+Button.propTypes = {
+  name: PropTypes.string.isRequired,
+  color: PropTypes.bool.isRequired,
+  wide: PropTypes.bool.isRequired,
 };
 
 export default Button;
