@@ -9,12 +9,18 @@ const operations = (() => {
       return Big(numberOne).minus(Big(numberTwo));
     }
     if (operation === '÷') {
-      return Big(numberOne).div(Big(numberTwo));
+      if (numberTwo !== '0') {
+        return Big(numberOne).div(Big(numberTwo));
+      }
+
+      return '∞';
     }
     if (operation === 'x') {
       return Big(numberOne).times(Big(numberTwo));
     }
-
+    if (numberOne === null) {
+      return Big(numberTwo).times(0.01);
+    }
     return Big(numberOne).times(Big(numberTwo).times(0.01));
   };
 
