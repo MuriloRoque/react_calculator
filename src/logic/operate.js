@@ -18,7 +18,9 @@ const operations = (() => {
     if (operation === 'x') {
       return Big(numberOne).times(Big(numberTwo));
     }
-
+    if (numberOne === null) {
+      return Big(numberTwo).times(0.01);
+    }
     return Big(numberOne).times(Big(numberTwo).times(0.01));
   };
 
