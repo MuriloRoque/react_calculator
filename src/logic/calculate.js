@@ -4,7 +4,7 @@ const calculations = (() => {
   const calculate = (calculator, buttonName) => {
     let { total, next, operation } = calculator;
     const operationSymbols = ['+', '-', '÷', 'x', '%'];
-    if (buttonName === 'AC') {
+    if (buttonName === 'AC' || total === '∞') {
       total = null;
       next = null;
       operation = null;

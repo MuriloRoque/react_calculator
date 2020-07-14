@@ -12,6 +12,9 @@ const operations = (() => {
       if (numberTwo !== '0') {
         return Big(numberOne).div(Big(numberTwo));
       }
+      else {
+        return '∞';
+      }
     }
     if (operation === 'x') {
       return Big(numberOne).times(Big(numberTwo));
